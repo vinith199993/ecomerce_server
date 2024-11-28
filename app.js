@@ -26,7 +26,7 @@ const app = express();
 app.use(cors(
   {
     origin: ["https://ecommerce-client-pearl.vercel.app"],
-    methods: ["POST","GET"],
+    methods: "*",
     credentials: true
   }
   ))
