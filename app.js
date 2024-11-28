@@ -25,7 +25,7 @@ const error = require("./middleware/error.middleware");
 const app = express();
 app.use(cors(
   {
-    origin: ["https://deploy-mern-1whq.vercel.app"],
+    origin: ["https://ecommerce-client-pearl.vercel.app"],
     methods: ["POST","GET"],
     credentials: true
   }
