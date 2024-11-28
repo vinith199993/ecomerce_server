@@ -23,6 +23,13 @@ const error = require("./middleware/error.middleware");
 
 /* application level connection */
 const app = express();
+app.use(cors(
+  {
+    origin: ["https://deploy-mern-1whq.vercel.app"],
+    methods: ["POST","GET"],
+    credentials: true
+  }
+  ))
 
 /* middleware connections */
 app.use(
